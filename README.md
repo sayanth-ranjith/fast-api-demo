@@ -18,7 +18,15 @@ The goal is to build solid FastAPI and Python knowledge without struggling with 
 - Pydantic models for request validation
 - Foundation patterns for API development
 
+## Java similarities
+
+- Consider pyproject.toml as the pom.xml
+- Consider uv lock to have all the exact dependency versions.  
+
 ## Getting Started
+
+- Install uv basically do a python -m pip install uv
+- Then do a python -m uv sync
 
 ```bash
 # Install dependencies
