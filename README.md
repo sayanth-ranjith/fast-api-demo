@@ -1,1 +1,35 @@
-#Learning fasat-api
+# FastAPI Quick Start Learning
+
+A quick start learning project for Python FastAPI fundamentals.
+
+## Purpose
+
+This is a foundational project designed to quickly grasp and understand FastAPI basics so we can confidently move into the **agentic programming world** with LangChain and LanGraph.
+
+The goal is to build solid FastAPI and Python knowledge without struggling with framework fundamentals when diving deep into:
+- **LangChain** - Building applications with LLMs
+- **LanGraph** - State management for agentic workflows
+- **Agentic Programming** - Building intelligent agents
+
+## What's Inside
+
+- Basic FastAPI endpoints (`/home`, `/ping`)
+- Simple POST endpoint for handling book data
+- Pydantic models for request validation
+- Foundation patterns for API development
+
+## Getting Started
+
+```bash
+# Install dependencies
+pip install fastapi uvicorn
+
+# Run the server
+uvicorn main:app --reload
+```
+
+Visit `http://localhost:8000` to test the endpoints.
+
+## Next Steps
+
+Once comfortable with FastAPI fundamentals, the next phase is integrating LangChain and LanGraph for building intelligent agentic systems.
