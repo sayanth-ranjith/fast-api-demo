@@ -1,0 +1,1 @@
+V1_PATH_CONSTANT = "/api/v1"
