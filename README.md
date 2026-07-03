@@ -29,8 +29,23 @@ The goal is to build solid FastAPI and Python knowledge without struggling with 
 - Then do a python -m uv sync
 
 ```bash
-# Install dependencies
-pip install fastapi uvicorn
+#Set up -> use python 3.13
+python -m venv .venv
+
+#activate venv in powershell
+.\.venv\Scripts\Activate.ps1 
+
+#activate venv in cmd
+.venv\Scripts\activate
+
+#install uv
+pip install uv
+
+#check for uv 
+uv --version
+
+#sync uv with pyproject.toml and uv lock 
+uv sync 
 
 # Run the server
 uvicorn main:app --reload
