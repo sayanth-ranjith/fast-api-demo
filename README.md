@@ -54,5 +54,8 @@ uvicorn main:app --reload
 Visit `http://localhost:8000` to test the endpoints.
 
 ## Next Steps
+These are yet to be improved. DB config should not be commited probably picked from .env file. 
+Auto creation of tables should be enabled so people using this repo do not have the pain to create tables by themselves.
+
 
 Once comfortable with FastAPI fundamentals, the next phase is integrating LangChain and LanGraph for building intelligent agentic systems.
