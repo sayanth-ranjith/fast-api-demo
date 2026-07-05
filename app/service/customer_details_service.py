@@ -17,3 +17,12 @@ class CustomerDetailsService:
             return None
         else:
             return CustomerDetailsResponse.model_validate(entity.__dict__)
+
+
+    def get_customer_by_id(self, id: int, db: Session):
+        entity = self.repo.get_customer_by_id(id, db)
+        if not entity:
+            return None
+        else:
+            return CustomerDetailsResponse.model_validate(entity.__dict__)
+

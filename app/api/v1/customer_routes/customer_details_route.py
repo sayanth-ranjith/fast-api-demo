@@ -7,11 +7,10 @@ from app.models.customer_details_request import CustomerDetailsRequest
 from app.models.customer_details_response import CustomerDetailsResponse
 from app.service.customer_details_service import CustomerDetailsService
 
-router = APIRouter(prefix=V1_PATH_CONSTANT, tags = ["customer_details"])
+router = APIRouter(prefix=V1_PATH_CONSTANT, tags=["v1_customer_details"])
 
 service = CustomerDetailsService()
 
-@router.post("/fetchCustomerDetails", response_model = CustomerDetailsResponse)
+@router.post("/fetchCustomerDetails", response_model=CustomerDetailsResponse)
 def fetch_customer_details(request: CustomerDetailsRequest, db: Session = Depends(get_db)):
-    value = service.get_customer_details_by_id(request, db)
-    return value
+    return service.get_customer_details_by_id(request, db)
