@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 
-from app.api.v1.customer_routes.customer_details_route import router
+from app.api import collect_routers
 
 app = FastAPI(title="My First API")
 
-app.include_router(router)
+for router in collect_routers("app.api"):
+    app.include_router(router)
